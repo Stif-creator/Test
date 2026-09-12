@@ -16,7 +16,7 @@ export async function createGoal(data: {
     name: data.name,
     targetAmount: data.targetAmount,
     savedAmount: 0,
-    asset: 'XLM',
+    asset: 'USDC',
     createdAt: new Date().toISOString(),
   };
   await ref.set(goal);

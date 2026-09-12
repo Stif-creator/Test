@@ -4,6 +4,6 @@ export interface Goal {
   name: string;
   targetAmount: number;
   savedAmount: number;
-  asset: 'XLM';
+  asset: 'USDC';
   createdAt: string;
 }

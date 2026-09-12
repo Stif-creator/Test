@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import '@pollar/react/styles.css';
 import { PollarProvider } from '@pollar/react';
 
 const geistSans = Geist({

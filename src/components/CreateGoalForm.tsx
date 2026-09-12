@@ -36,7 +36,7 @@ export function CreateGoalForm({ onCreated }: { onCreated: () => void }) {
       />
       <input
         type="number"
-        placeholder="Monto objetivo (XLM)"
+        placeholder="Monto objetivo (USDC)"
         value={targetAmount}
         onChange={(e) => setTargetAmount(e.target.value)}
         required

@@ -23,7 +23,11 @@ export function DepositForm({ goalId, onDeposited }: { goalId: string; onDeposit
     const result = await runTx('payment', {
       destination: wallet.address,
       amount,
-      asset: { type: 'native' },
+      asset: {
+        type: 'credit_alphanum4',
+        code: 'USDC',
+        issuer: 'GBBD47IF6LWK7P7MDEVSCWR7DPUWV3NY3DTQEVFL4NAT4AQH3ZLLFLA5',
+      },
     });
 
     if (result.status === 'success' || result.status === 'pending') {
