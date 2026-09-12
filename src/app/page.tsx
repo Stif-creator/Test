@@ -1,6 +1,7 @@
 'use client';
 
 import { useState } from 'react';
+import Link from 'next/link';
 import { usePollar } from '@pollar/react';
 import { PiggyBank } from 'lucide-react';
 import { LoginButton } from '@/components/LoginButton';
@@ -48,6 +49,10 @@ export default function Home() {
             <LogoutButton />
           </div>
         </div>
+
+        <Link href="/ramp" className="block text-xs text-gray-600">
+          Probar con dinero real (Bolivianos → USDC) →
+        </Link>
 
         <div className="grid gap-6 lg:grid-cols-3">
           <div className="space-y-6 lg:col-span-2">
